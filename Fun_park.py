@@ -6,7 +6,7 @@ children = [
 {"name": "Eve", "age": 6, "height": 99} 
 ]
 
-def criteria(x):
+'''def criteria(x):
     if x["age"] > 3 and x["height"] > 100:
         return True
     else:
@@ -14,4 +14,8 @@ def criteria(x):
 
 eligible_children = list(filter(criteria , children))
 
+print(eligible_children)
+'''
+
+eligible_children = [x for x in children if x["age"] > 3 and x["height"] > 100]
 print(eligible_children)
